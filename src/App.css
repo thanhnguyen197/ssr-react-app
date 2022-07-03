@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: auto;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	background-color: #fff;
+	/* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol";
+}
+body {
+	-webkit-overflow-scrolling: touch;
+}
+body.modal-open {
+	overscroll-behavior-y: none;
+	/* https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/ */
+	overflow: hidden;
+	position: fixed;
+}
+
+#root {
+}
+#moda-root {
+}
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+button {
+	font-size: 1rem;
+	border: none;
+	outline: none;
+}
+a:hover {
+	cursor: pointer;
+}
+input {
+	border: none;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+textarea {
+	resize: none;
+}
+::-moz-selection {
+	/* Code for Firefox */
+}
+::selection {
+}
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+}
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	opacity: 1;
+}
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+}
